@@ -1,0 +1,13 @@
+[sframe]
+version=0
+num_segments=0
+num_columns=3
+nrows=16
+[column_names]
+0000=annotation
+0001=imagefilename
+0002=imagePath
+[column_files]
+0000=m_9b5ec6f59ba29cc5.sidx:0
+0001=m_9b5ec6f59ba29cc5.sidx:1
+0002=m_9b5ec6f59ba29cc5.sidx:2

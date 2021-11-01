@@ -10,3 +10,4 @@ The dataset is up on Roboflow.com. You can download the datasets with these link
 
 
 ## Useful Links about hardware acceleration
+[https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/#Memory_Bandwidth] - a great write up on NVidia RTX video cards for ML training

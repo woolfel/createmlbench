@@ -12,23 +12,12 @@
 
 For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations.
 
-### batch 16
-* Test run: 9:53 - 10:09
-* memory - 1.4-1.5G
-* loss -1.493
+|batch	 | elapsed time min | peak memory G | loss |
+----------------------------------------------------
+|16	     |16                |	1.5           |1.493 |
+|32      |29                | 2.8           |1.326 |
+|64      |56                |5.4            |1.272 |
+|128     |170               |12             |1.186 |
+![image](https://user-images.githubusercontent.com/117031/139875453-461d04b6-6384-4778-9fd0-aee9222808d4.png)
 
-### batch 32
-* Test run: 10:35 - 11:04
-* memory - 2.8G
-* loss - 1.326
-
-### batch 64
-* Test run: 8:51 - 9:47
-* memory - 5.46G
-* loss - 1.272
-
-### batch 128
-* Test run: 12:11 - 3:01
-* memory - 12G
-* loss - 1.186
 * memory pressure - light

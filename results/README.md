@@ -8,27 +8,23 @@
 * CreateML version 3.0(78.6)
 * XCode version 13.1(13A1030d) 
 
-Test run: 9:53 - 10:09
-memory - 1.4-1.5G
-batch 16
-loss -1.493
-iterations - 1000
+## batch 16
+* Test run: 9:53 - 10:09
+* memory - 1.4-1.5G
+* loss -1.493
 
-Test run: 10:35 - 11:04
-memory - 2.8G
-batch 32
-loss - 1.326
-iterations - 1000
+## batch 32
+* Test run: 10:35 - 11:04
+* memory - 2.8G
+* loss - 1.326
 
-Test run: 8:51 - 9:47
-memory - 5.46G
-batch 64
-loss - 1.272
-iterations - 1000
+## batch 64
+* Test run: 8:51 - 9:47
+* memory - 5.46G
+* loss - 1.272
 
-Test run: 12:11 - 3:01
-memory - 12G
-batch 128
-loss - 1.186
-iterations - 1000
-memory pressure - light
+## batch 128
+* Test run: 12:11 - 3:01
+* memory - 12G
+* loss - 1.186
+* memory pressure - light

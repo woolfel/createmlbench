@@ -18,6 +18,5 @@ For each test, I cloned the repository, set the data sources, select the batch a
 |32      |29                | 2.8           |1.326 |
 |64      |56                |5.4            |1.272 |
 |128     |170               |12             |1.186 |
-![image](https://user-images.githubusercontent.com/117031/139875453-461d04b6-6384-4778-9fd0-aee9222808d4.png)
 
 * memory pressure - light

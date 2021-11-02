@@ -10,12 +10,19 @@ The dataset is up on Roboflow.com. You can download the datasets with these link
 
 ## Running the benchmark
 
-1. clone the repository
+1. clone the repository "git clone https://github.com/woolfel/createmlbench"
 2. download the dataset and extract it to the desired location
 3. open the CreateML project
-4. Click Train button to start training
+4. The data sources need to be set before you can start training. Click Choose and open the train folder
+5. Set validation data to the valid folder
+6. Set testing data to the test folder
+7. Use 1000 for the iterations
+8. Change the batch size
+9. Click Train button to start training
 
 CreateML doesn't give you a summary of how long the train+test takes. What I do is create a spreadsheet or text file to record the start time and end time.
+
+
 
 ## Useful Links about hardware acceleration
 [https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/] - a great write up on NVidia RTX video cards for ML training

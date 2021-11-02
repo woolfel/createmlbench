@@ -19,4 +19,4 @@ For each test, I cloned the repository, set the data sources, select the batch a
 |64      |56                |5.4            |1.272 |
 |128     |170               |12             |1.186 |
 
-* memory pressure - light
+* Footnote: memory pressure for 128 batch size was light, but it didn't need swap

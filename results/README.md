@@ -45,4 +45,4 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 
 # Observations
 
-During training I had activity monitor open. The GPU usage was oddly low 8-9%. That suggests this particular benchmark isn't using the GPU. At this time, I'm not sure exactly why that's happening, but it is repeatable. I ran the benchmarks dozens of times and GPU usage was consistently low.
+During training I had activity monitor open. The GPU usage was oddly low 4-8%. That suggests this particular benchmark isn't using the GPU. At this time, I'm not sure exactly why that's happening, but it is repeatable. I ran the benchmarks dozens of times and GPU usage was consistently low.

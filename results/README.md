@@ -8,9 +8,16 @@
 * CreateML version 3.0(78.6)
 * XCode version 13.1(13A1030d) 
 
-# Test process
+## Small Dataset
+|Train	 | Validation | Test |
+|--------|:----------:|:-----|
+|144	   |16          |	8    |
+
+
+## Test process
 
 For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations.
+
 
 |batch	 | elapsed time min | peak memory G | loss |
 |--------|:----------------:|:-------------:|------|

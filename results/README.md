@@ -43,3 +43,6 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
 
+# Observations
+
+During training I had activity monitor open. The GPU usage was oddly low 8-9%. That suggests this particular benchmark isn't using the GPU. At this time, I'm not sure exactly why that's happening, but it is repeatable. I ran the benchmarks dozens of times and GPU usage was consistently low.

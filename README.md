@@ -1,6 +1,8 @@
 # Create ML Benchmark
 
-I wanted to benchmark Apple's M1 Macbook Air to the new 2021 M1 Max Macbook Pro. This Create ML benchmark uses a simple project to measure the training time with different dataset and batch size settings.
+I created this CreateML project to benchmark Apple's M1 Macbook Air and 2021 M1 Max Macbook Pro. The project uses the object detection model with a simple dataset I created on roboflow. This isn't meant to produce a useful model. The main purpose is to measure the performance of macbooks with different dataset and batch sizes. I have several NVidia video cards for doing ML training, but these days the cards are over priced due to supply shortage.
+
+The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). This makes the M1 Max macbook an interesting alternative for light weight experiments.
 
 ## Roboflow Project
 

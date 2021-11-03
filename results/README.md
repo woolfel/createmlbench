@@ -42,4 +42,4 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 |128     |281               | 16.5          |1.072 |
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
-* 
+

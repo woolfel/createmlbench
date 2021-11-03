@@ -13,6 +13,11 @@
 |--------|:----------:|:-----|
 |144	   |16          |	8    |
 
+## bigger Dataset (larger-dataset-8)
+|Train	 | Validation | Test |
+|--------|:----------:|:-----|
+|301	   |29          |	18   |
+
 
 ## Test process
 
@@ -23,7 +28,19 @@ For each test, I cloned the repository, set the data sources, select the batch a
 |--------|:----------------:|:-------------:|------|
 |16	     |16                |	1.5           |1.493 |
 |32      |29                | 2.8           |1.326 |
-|64      |56                |5.4            |1.272 |
-|128     |170               |12             |1.186 |
+|64      |56                | 5.4           |1.272 |
+|128     |170               | 12            |1.186 |
 
 * Footnote: memory pressure for 128 batch size was light, but it didn't need swap
+
+I also ran the same tests with a slightly bigger dataset. The purpose was to see at which point CreateML uses disk swap.
+
+|batch	 | elapsed time min | peak memory G | loss |
+|--------|:----------------:|:-------------:|------|
+|16	     |21                |	1.5           |1.463 |
+|32      |42                | 3.5           |1.258 |
+|64      |85                | 8.4           |1.159 |
+|128     |281               | 16.5          |1.072 |
+
+* Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
+* 

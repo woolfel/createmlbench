@@ -10,6 +10,14 @@ The dataset is up on Roboflow.com. You can download the datasets with these link
 
 [https://universe.roboflow.com/peter-lin/face-features-test] - a selection of images from coco dataset with eyes and nose bounding boxes
 
+## Roboflow public datasets
+
+To get a better idea of the performance limits of the new M1 Max SOC, I decided to use the public datasets and ran a bunch of tests. You can find the public datasets for Microsoft COCO and Pascal VOC at the url below.
+
+[https://public.roboflow.com/object-detection/microsoft-coco-subset] - microsoft coco 2017
+
+[https://public.roboflow.com/object-detection/pascal-voc-2012] - Pascal VOC dataset 2012
+
 ## Running the benchmark
 
 1. clone the repository "git clone https://github.com/woolfel/createmlbench"

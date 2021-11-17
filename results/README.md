@@ -46,4 +46,4 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 
 # Observations
 
-During training I had activity monitor open. The GPU usage was oddly low 4-8%. That suggests this particular benchmark isn't using the GPU. At this time, I'm not sure exactly why that's happening, but it is repeatable. I ran the benchmarks dozens of times and GPU usage was consistently low.
+During training I had activity monitor open. The GPU usage was oddly low 4-8%. This happens if you choose full network training. For some reason, full network training doesn't use GPU correctly. If you choose transfer learning, it uses GPU like I expect. As of 11/16/21, I don't know the reason for this behavior. I would expect full network to use GPU during training.

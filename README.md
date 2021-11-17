@@ -8,7 +8,7 @@ The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). Thi
 
 The dataset is up on Roboflow.com. You can download the datasets with these links
 
-[ttps://universe.roboflow.com/peter-lin/face-features-test] - a selection of images from coco dataset with eyes and nose bounding boxes
+[https://universe.roboflow.com/peter-lin/face-features-test] - a selection of images from coco dataset with eyes and nose bounding boxes
 
 ## Running the benchmark
 

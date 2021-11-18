@@ -10,6 +10,13 @@ I ran the tests a few times and they are generally consistent. The results in th
 * Monterey
 * CreateML 3
 
+## Coco Dataset
+
+* training 115,406
+* validation 4,952
+* classes 80
+* zipped file 6.5G
+
 ## Table of results
 
 Screen shots of each run is in the folders.

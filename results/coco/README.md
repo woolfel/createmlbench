@@ -22,7 +22,7 @@ Screen shots of each run is in the folders.
 
 |Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train Acc | Top Val Acc | Peak Memory |
 |-----------|:-------------|:---------------|:--------------------|:--------------|:------------|:------------|
-| 16       | 124 min      | 22             | 22                  |  64           | 64         | 2.2G |
+| 16       | 124 min      | 22             | 22                  |  64           | 64         | 2.6G |
 | 32       | 184 min      | 25             | 24                  |  66           | 65         | 5.3G |
 | 64       | 304 min      | 27             | 25                  |  70           | 69         | 11.1G |
 | 128      | 570 min      | 28             | 25                  |  72           | 69         | 22.2G |

@@ -12,7 +12,15 @@ I ran the tests a few times and they are generally consistent. The results in th
 
 ## Table of results
 
-|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train Acc | Tp Val Acc |
+Screen shots of each run is in the folders.
+
+* elapsed time is in minutes from the reported start and finish
+* training accuracy is the final average accuracy across all classes
+* validation accuracy is the final average accuracy across all classes
+* top train accuracy is the class I/U reported from the training dataset
+* top validation accuracy is the class I/U reported from the validation dataset
+
+|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train Acc | Top Val Acc |
 |-----------|:-------------|:---------------|:--------------------|:--------------|:-----------|
 | 16       | 124 min      | 22             | 22                  |  64           | 64         |
 | 32       | 184 min      | 25             | 24                  |  66           | 65         |

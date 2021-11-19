@@ -4,6 +4,8 @@ I created this CreateML project to benchmark Apple's M1 Macbook Air and 2021 M1 
 
 The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). This makes the M1 Max macbook an interesting alternative for light weight experiments.
 
+[https://github.com/woolfel/createmlbench/tree/main/results/coco] - Results for COCO dataset on M1 Max MBP
+
 ## Roboflow Project
 
 The dataset is up on Roboflow.com. You can download the datasets with these links

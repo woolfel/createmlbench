@@ -24,10 +24,10 @@ Screen shots of each run is in the folders.
 * elapsed time is in minutes from the reported start and finish
 * training accuracy is the final average accuracy across all classes
 * validation accuracy is the final average accuracy across all classes
-* top train accuracy is the class I/U reported from the training dataset
-* top validation accuracy is the class I/U reported from the validation dataset
+* top class Intersetion/Union reported from the training dataset
+* top class Intersetion/Union reported from the validation dataset
 
-|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train Acc | Top Val Acc | Peak Memory |
+|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train I/U | Top Val I/U | Peak Memory |
 |-----------|:-------------|:---------------|:--------------------|:--------------|:------------|:------------|
 | 16       | 124 min      | 22             | 22                  |  64           | 64         | 2.74G |
 | 32       | 184 min      | 25             | 24                  |  66           | 65         | 5.3G |

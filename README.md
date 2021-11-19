@@ -44,7 +44,7 @@ The easiest way to run the same project with different batch size is to add mode
 
 ## Reseting the Project for different batch size
 
-With version 3.0, CreateML doesn't let you change the batch size after it has run training. To get around that, I manually reset the project. Here are the steps for resetting the project from terminal.
+With version 3.0, CreateML doesn't let you change the batch size of a model source after it has run training. To get around that, I manually reset the project. Here are the steps for resetting the project from terminal. Only use this method if you don't want to add model sources approach.
 
 1. Open terminal window
 2. Go to the folder where you cloned the repo

@@ -1,0 +1,46 @@
+# Coco Dataset Results for M1 Max MBP
+
+I ran the tests a few times and they are generally consistent. The results in the table aren't averages. Once I run them a few more times, I will update it with averages.
+
+## Hardware Specs
+* M1 Max
+* 24 GPU
+* 10 CPU
+* 32G unified memory
+* Monterey
+* CreateML 3
+
+## Pascal Dataset
+
+* training 13,299 
+* validation 3,302 
+* classes 20
+* zipped file 
+
+## Table of results
+
+Screen shots of each run is in the folders.
+
+* elapsed time is in minutes from the reported start and finish
+* training accuracy is the final average accuracy across all classes
+* validation accuracy is the final average accuracy across all classes
+* top class Intersetion/Union reported from the training dataset
+* top class Intersetion/Union reported from the validation dataset
+
+|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train I/U | Top Val I/U | Peak Memory |
+|-----------|:-------------|:---------------|:--------------------|:--------------|:------------|:------------|
+| 16       |  min      |              |                   |             |          |  |
+| 32       |  min      |              |                   |             |          |  |
+| 64       |  min      |              |                   |             |          |  |
+| 128      |  min      |              |                   |             |          |  |
+
+[https://developer.apple.com/documentation/createml/mlobjectdetectormetrics] - Documentation on intersection/union and what Apple means in the context of object detection. If you're new to YOLO, read the paper to get a better understanding.
+
+[https://pjreddie.com/darknet/yolov2/] - YOLOv2 website
+
+[https://pjreddie.com/media/files/papers/YOLOv3.pdf] - YOLOV3 paper
+
+## Observations
+
+During the training, the GPU was above 90% utilization. CPU usage was around 50%, but I didn't keep a close watch. For batch sizes less than 128, memory usage was good and didn't need swap. If I ran additional training for a specific batch, it used more memory than the initial run. To fix that memory issue, I closed CreateML and restarted the app. There seems to be a garbage collection issue with running additional training without restarting the app. If I have time, I plan to investigate this a bit more to get a better understanding of why it happens.
+

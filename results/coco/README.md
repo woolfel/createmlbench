@@ -34,6 +34,8 @@ Screen shots of each run is in the folders.
 | 64       | 304 min      | 27             | 25                  |  70           | 69         | 11.1G |
 | 128      | 570 min      | 28             | 25                  |  72           | 69         | 22.2G |
 
+[https://developer.apple.com/documentation/createml/mlobjectdetectormetrics] - Documentation on intersection/union and what Apple means in the context of object detection.
+
 ## Observations
 
 During the training, the GPU was above 90% utilization. CPU usage was around 50%, but I didn't keep a close watch. For batch sizes less than 128, memory usage was good and didn't need swap. If I ran additional training for a specific batch, it used more memory than the initial run. To fix that memory issue, I closed CreateML and restarted the app. There seems to be a garbage collection issue with running additional training without restarting the app. If I have time, I plan to investigate this a bit more to get a better understanding of why it happens.

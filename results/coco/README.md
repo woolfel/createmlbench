@@ -36,7 +36,7 @@ Screen shots of each run is in the folders.
 
 [https://developer.apple.com/documentation/createml/mlobjectdetectormetrics] - Documentation on intersection/union and what Apple means in the context of object detection. If you're new to YOLO, read the paper to get a better understanding.
 
-[https://pjreddie.com/darknet/yolo/] - YOLO website
+[https://pjreddie.com/darknet/yolov2/] - YOLOv2 website
 
 [https://pjreddie.com/media/files/papers/YOLOv3.pdf] - YOLOV3 paper
 

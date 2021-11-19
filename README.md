@@ -32,7 +32,22 @@ To get a better idea of the performance limits of the new M1 Max SOC, I decided 
 
 CreateML doesn't give you a summary of how long the train+test takes. What I do is create a spreadsheet or text file to record the start time and end time.
 
+## Reseting the Project for different batch size
 
+With version 3.0, CreateML doesn't let you change the batch size after it has run training. To get around that, I manually reset the project. Here are the steps for resetting the project from terminal.
+
+1. Open terminal window
+2. Go to the folder where you cloned the repo
+3. Change to projects folder. You should see the list of projects
+4. use "cd" to change to project folder. Example: "cd CocoObjDetect.mlproj"
+5. Run "ls -al" to see the files in the folder
+6. Delete the data in checkpoints folder with "rm -Rf CheckPoints"
+7. Delete the Data sources settings with "rm -Rf Data\ Sources"
+8. Delete the model snapshots with "rm -Rf Snapshots"
+9. Delete the setting configuration with "rm -f Model\ Containers/*"
+10. Reopen the project
+
+The createml project should be ready for training with different settings.
 
 ## Useful Links about hardware acceleration
 [https://timdettmers.com/2020/09/07/which-gpu-for-deep-learning/] - a great write up on NVidia RTX video cards for ML training

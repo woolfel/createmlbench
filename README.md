@@ -32,6 +32,16 @@ To get a better idea of the performance limits of the new M1 Max SOC, I decided 
 
 CreateML doesn't give you a summary of how long the train+test takes. What I do is create a spreadsheet or text file to record the start time and end time.
 
+## Running different Batch size
+
+The easiest way to run the same project with different batch size is to add model sources
+
+1. Click the + icon next to model sources
+2. select the data source for training, validation, test
+3. enter iterations
+4. select the batch size
+5. click train button
+
 ## Reseting the Project for different batch size
 
 With version 3.0, CreateML doesn't let you change the batch size after it has run training. To get around that, I manually reset the project. Here are the steps for resetting the project from terminal.

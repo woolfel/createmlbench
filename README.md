@@ -38,9 +38,10 @@ The easiest way to run the same project with different batch size is to add mode
 
 1. Click the + icon next to model sources
 2. select the data source for training, validation, test
-3. enter iterations
-4. select the batch size
-5. click train button
+3. select full network or transfer learning
+4. enter iterations
+5. select the batch size
+6. click train button
 
 ## Reseting the Project for different batch size
 

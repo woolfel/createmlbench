@@ -1,4 +1,4 @@
-# Coco Dataset Results for M1 Macbook Air
+# Pascal Voc Dataset Results for M1 Macbook Air
 
 I ran the tests a few times and they are generally consistent. The results in the table aren't averages. Once I run them a few more times, I will update it with averages.
 

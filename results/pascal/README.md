@@ -29,7 +29,7 @@ Screen shots of each run is in the folders.
 
 |Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train I/U | Top Val I/U | Peak Memory |
 |-----------|:-------------|:---------------|:--------------------|:--------------|:------------|:------------|
-| 16       |  min      |              |                   |             |          |  |
+| 16       |  min      |              |                   |             |          | 1.5G |
 | 32       |  min      |              |                   |             |          |  |
 | 64       |  min      |              |                   |             |          |  |
 | 128      |  min      |              |                   |             |          |  |
@@ -42,5 +42,5 @@ Screen shots of each run is in the folders.
 
 ## Observations
 
-During the training, the GPU was above 90% utilization. CPU usage was around 50%, but I didn't keep a close watch. For batch sizes less than 128, memory usage was good and didn't need swap. If I ran additional training for a specific batch, it used more memory than the initial run. To fix that memory issue, I closed CreateML and restarted the app. There seems to be a garbage collection issue with running additional training without restarting the app. If I have time, I plan to investigate this a bit more to get a better understanding of why it happens.
+During the training, the GPU was above 90% utilization. CPU usage was around 50%. Performance was similar to COCO Dataset.
 

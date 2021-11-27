@@ -32,7 +32,7 @@ Screen shots of each run is in the folders.
 | 16       | 14 min      | 37             | 36                  | 70            | 65         | 1.55G |
 | 32       | 21 min      | 45             | 42                  | 78            | 73         | 2.9G |
 | 64       |  min      |              |                   |             |          | 5.85G |
-| 128      |  min      |              |                   |             |          |  |
+| 128      |  min      |              |                   |             |          | 11.3G |
 
 [https://developer.apple.com/documentation/createml/mlobjectdetectormetrics] - Documentation on intersection/union and what Apple means in the context of object detection. If you're new to YOLO, read the paper to get a better understanding.
 

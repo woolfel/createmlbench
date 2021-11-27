@@ -3,7 +3,7 @@
 I ran the tests a few times and they are generally consistent. The results in the table aren't averages. Once I run them a few more times, I will update it with averages.
 
 ## Hardware Specs
-* M1 Max
+* M1
 * 8 GPU
 * 8 CPU
 * 16G unified memory

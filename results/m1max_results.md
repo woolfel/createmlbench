@@ -22,8 +22,8 @@ For each test, I cloned the repository, set the data sources, select the batch a
 |--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
 |16	     | 11     | 52        | 24      | 10       | 60           | 42           | 17          |	1.5       |1.49  |
 |32	     | 17     | 59        | 31      | 18       | 63           | 48           | 32          |	2.8       |1.32  |
-|64	     |      |         |       |        |            |            |           |	       |   |
-|128     |      |         |       |        |            |            |           |	       |   |
+|64	     |      |         |       |        |            |            |           |	           |  5.4       |    |
+|128     |      |         |       |        |            |            |           |	           |            |    |
 
 * Footnote: memory pressure for 128 batch size was light, but it didn't need swap
 

@@ -1,12 +1,22 @@
-# Pascal Voc Dataset Results for M1 Macbook Air
+# Pascal Voc Dataset Results 
 
 I ran the tests a few times and they are generally consistent. The results in the table aren't averages. Once I run them a few more times, I will update it with averages.
 
 ## Hardware Specs
+
+### M1 Macbook Air
 * M1
 * 8 GPU
 * 8 CPU
 * 16G unified memory
+* Monterey
+* CreateML 3
+
+### M1 Max Macbook Pro
+* M1 Max
+* 24 GPU
+* 2/8 CPU
+* 32G unified memory
 * Monterey
 * CreateML 3
 
@@ -21,18 +31,21 @@ I ran the tests a few times and they are generally consistent. The results in th
 
 Screen shots of each run is in the folders.
 
-* elapsed time is in minutes from the reported start and finish
+* ET - elapsed time is in minutes from the reported start and finish
 * training accuracy is the final average accuracy across all classes
 * validation accuracy is the final average accuracy across all classes
 * top class Intersetion/Union reported from the training dataset
 * top class Intersetion/Union reported from the validation dataset
 
-|Batch size | elapsed time | Train Accuracy | Validation Accuracy | Top Train I/U | Top Val I/U | Peak Memory |
-|-----------|:-------------|:---------------|:--------------------|:--------------|:------------|:------------|
-| 16       | 14 min      | 37             | 36                  | 70            | 65         | 1.55G |
-| 32       | 21 min      | 45             | 42                  | 78            | 73         | 2.9G |
-| 64       | 35 min      | 47             | 44                  | 79            | 74         | 5.85G |
-| 128      | 64 min      | 51             | 46                  | 82            | 78         | 11.3G |
+|Batch size | M1 ET | M1Max ET | M1 Train Acc | M1Max Train Acc |
+|-----------|:------|:---------|:-------------|:----------------|
+| 16       | 14 min | 7 min    | 37           | 38              |
+| 32       | 21 min | 11 min   | 45           | 44              |
+| 64       | 35 min | 17 min   | 47           | 48              |
+| 128      | 64 min | 30 min   | 51           | 51              |
+
+
+## References
 
 [https://developer.apple.com/documentation/createml/mlobjectdetectormetrics] - Documentation on intersection/union and what Apple means in the context of object detection. If you're new to YOLO, read the paper to get a better understanding.
 

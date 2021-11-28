@@ -7,7 +7,7 @@ I ran the tests a few times and they are generally consistent. The results in th
 ### M1 Macbook Air
 * M1
 * 8 GPU
-* 8 CPU
+* 4/4 CPU
 * 16G unified memory
 * Monterey
 * CreateML 3

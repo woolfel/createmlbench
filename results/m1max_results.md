@@ -41,10 +41,21 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 |16	     | 10     | 46        | 26      | 22       | 49           | 42           | 29          | 1.5        | 1.64 |
 |32	     | 17     | 54        | 28      | 14       | 55           | 46           | 17          | 2.76       | 1.53 |
 |64	     | 30     | 57        | 25      | 28       | 58           | 41           | 35          | 5.3        | 1.36 |
-|128     |        |           |         |          |              |             |              | 11.8       |  |
+|128     | 54     | 66        | 28      | 17       | 68           | 46           | 24          | 11.8       | 1.30 |
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
 
-# Observations
+# Accuracy differences between datasets
 
-During training I had activity monitor open. The GPU usage was oddly low 4-8%. This happens if you choose full network training. For some reason, full network training doesn't use GPU correctly. If you choose transfer learning, it uses GPU like I expect. As of 11/16/21, I don't know the reason for this behavior. I would expect full network to use GPU during training.
+Note the accuracy between the small and larger dataset is quite different. Even though the larger dataset contains the same images as the small dataset, you can't expect the same accuracy. The larger dataset has more variety, which means it will have lower accuracy. You can see the impact on training accuracy with batch size. What you can't do is directly compare the results of different datasets.
+
+# Transfer Learning
+
+The accuracy with transfer learning is better than full network.
+
+|batch	 | ET min | Train Acc | Val Acc | Test Acc | Top IU Train | Top IU Valid | Top IU Test | Peak mem G | loss |
+|--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
+|16	     | 4      | 75        | 19      | 12       | 78           | 23           | 13          | 1.5        | 0.41 |
+|32	     | 8      | 75        | 21      | 10       | 78           | 26           | 11          | 2.76       | 0.02 |
+|64	     | 13     | 75        | 23      | 8        | 78           | 24           | 9           | 5.3        | 0.017 |
+|128     | 25     | 75        | 22      | 13       | 78           | 25           | 14          | 8.4        | 0.012 |

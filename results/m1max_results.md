@@ -48,3 +48,14 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 # Accuracy differences between datasets
 
 Note the accuracy between the small and larger dataset is quite different. Even though the larger dataset contains the same images as the small dataset, you can't expect the same accuracy. The larger dataset has more variety, which means it will have lower accuracy. You can see the impact on training accuracy with batch size. What you can't do is directly compare the results of different datasets.
+
+# Transfer Learning
+
+The accuracy with transfer learning is better than full network.
+
+|batch	 | ET min | Train Acc | Val Acc | Test Acc | Top IU Train | Top IU Valid | Top IU Test | Peak mem G | loss |
+|--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
+|16	     |      |         | 26      | 22       | 49           | 42           | 29          | 1.5        | 1.64 |
+|32	     |      |         | 28      | 14       | 55           | 46           | 17          | 2.76       | 1.53 |
+|64	     |      |         | 25      | 28       | 58           | 41           | 35          | 5.3        | 1.36 |
+|128     |      |         | 28      | 17       | 68           | 46           | 24          | 8.3      | 1.30 |

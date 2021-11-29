@@ -40,7 +40,7 @@ I also ran the same tests with a slightly bigger dataset. The purpose was to see
 |--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
 |16	     | 10     | 46        | 26      | 22       | 49           | 42           | 29          | 1.5        | 1.64 |
 |32	     | 17     | 54        | 28      | 14       | 55           | 46           | 17          | 2.76       | 1.53 |
-|64	     |        |           |         |          |              |              |             | 5.3        |  |
+|64	     | 30     | 57        | 25      | 28       | 58           | 41           | 35          | 5.3        | 1.36 |
 |128     |      |         |       |        |            |            |           |         |  |
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours

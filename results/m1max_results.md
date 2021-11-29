@@ -1,5 +1,7 @@
 # Hardware
 * M1 Max Macbook Pro
+* 2/8 CPU
+* 24 GPU
 * 32G memory
 * 2T SSD
 
@@ -20,10 +22,10 @@ For each test, I cloned the repository, set the data sources, select the batch a
 
 |batch	 | ET min | Train Acc | Val Acc | Test Acc | Top IU Train | Top IU Valid | Top IU Test | Peak mem G | loss |
 |--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
-|16	     | 11     | 52        | 24      | 10       | 60           | 42           | 17          |	1.5       |1.49  |
-|32	     | 17     | 59        | 31      | 18       | 63           | 48           | 32          |	2.8       |1.32  |
-|64	     |        |           |         |          |              |              |             |	5.4       |    |
-|128     |      |             |         |          |             |              |             |	           |     |
+|16	     | 11     | 52        | 24      | 10       | 60           | 42           | 17          |	1.5       | 1.49 |
+|32	     | 17     | 59        | 31      | 18       | 63           | 48           | 32          |	2.8       | 1.32 |
+|64	     | 30     | 64        | 30      | 15       | 69           | 45           | 26          |	5.4       | 1.27 |
+|128     | 57     | 69        | 26      | 22       | 72           | 39           | 38          |	12        | 1.18 |
 
 * Footnote: memory pressure for 128 batch size was light, but it didn't need swap
 

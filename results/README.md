@@ -1,8 +1,16 @@
 # Hardware
-* M1 Macbook Air
+
+## M1 Macbook Air
 * 16G memory
 * 512G SSD
-* 13" screen
+* 4/4 CPU
+* 8 GPU
+
+## M1 Max Macbook Pro
+* 32G memory
+* 2T SSD
+* 2/8 CPU
+* 24 GPU
 
 # Software
 * CreateML version 3.0(78.6)
@@ -19,12 +27,12 @@
 For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations. The setting used was "full network".
 
 
-|batch	 | elapsed time min | peak memory G | loss |
-|--------|:----------------:|:-------------:|------|
-|16	     |16                |	1.5           |1.493 |
-|32      |29                | 2.8           |1.326 |
-|64      |56                | 5.4           |1.272 |
-|128     |170               | 12            |1.186 |
+|batch	 | M1 ET | M1Max ET | peak mem G | loss    |
+|--------|:------|:---------|:-----------|:--------|
+|16	     | 16    | 11       |	1.5        | 1.493   |
+|32      | 29    | 17       | 2.8        | 1.326   |
+|64      | 56    | 30       | 5.4        | 1.272   |
+|128     | 170   | 57       | 12         | 1.186   |
 
 * Footnote: memory pressure for 128 batch size was light, but it didn't need swap
 

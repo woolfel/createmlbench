@@ -24,7 +24,7 @@
 
 ## Test process
 
-For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations. The setting used was "full network".
+For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations. The setting used was "full network". Elapsed time is in minutes.
 
 
 |batch	 | M1 ET | M1Max ET | peak mem G | loss    |

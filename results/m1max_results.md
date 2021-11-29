@@ -36,12 +36,12 @@ For each test, I cloned the repository, set the data sources, select the batch a
 
 I also ran the same tests with a slightly bigger dataset. The purpose was to see at which point CreateML uses disk swap.
 
-|batch	 | elapsed time min | peak memory G | loss |
-|--------|:----------------:|:-------------:|------|
-|16	     |21                |	1.5           |1.463 |
-|32      |42                | 3.5           |1.258 |
-|64      |85                | 8.4           |1.159 |
-|128     |281               | 16.5          |1.072 |
+|batch	 | ET min | Train Acc | Val Acc | Test Acc | Top IU Train | Top IU Valid | Top IU Test | Peak mem G | loss |
+|--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|
+|16	     | 11     |         |       |        |            |            |           | 1.5       |  |
+|32	     |      |         |       |        |            |            |           |        | 1.32 |
+|64	     |      |         |       |        |            |            |           |        | 1.27 |
+|128     |      |         |       |        |            |            |           |         | 1.18 |
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
 

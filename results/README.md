@@ -27,12 +27,12 @@
 For each test, I cloned the repository, set the data sources, select the batch and timed the training run. At the end I used preview to test sample photos. Each run was for 1000 iterations. The setting used was "full network". Elapsed time is in minutes.
 
 
-|batch	 | M1 ET | M1Max ET | peak mem G | loss    |
-|--------|:------|:---------|:-----------|:--------|
-|16	     | 16    | 11       |	1.5        | 1.493   |
-|32      | 29    | 17       | 2.8        | 1.326   |
-|64      | 56    | 30       | 5.4        | 1.272   |
-|128     | 170   | 57       | 12         | 1.186   |
+|batch	 | M1 ET | M1Max ET | peak mem G |
+|--------|:------|:---------|:-----------|
+|16	     | 16    | 11       |	1.5        |
+|32      | 29    | 17       | 2.8        |
+|64      | 56    | 30       | 5.4        |
+|128     | 170   | 57       | 12         |
 
 * Footnote: memory pressure for 128 batch size was light, but it didn't need swap
 
@@ -43,12 +43,12 @@ For each test, I cloned the repository, set the data sources, select the batch a
 
 I also ran the same tests with a slightly bigger dataset. The purpose was to see at which point CreateML uses disk swap.
 
-|batch	 | elapsed time min | peak memory G | loss |
-|--------|:----------------:|:-------------:|------|
-|16	     |21                |	1.5           |1.463 |
-|32      |42                | 3.5           |1.258 |
-|64      |85                | 8.4           |1.159 |
-|128     |281               | 16.5          |1.072 |
+|batch	 | M1 ET | M1Max ET | peak mem G |
+|--------|:------|:---------|:-----------|
+|16	     | 21    | 10       |	1.5        |
+|32      | 42    | 17       | 3.5        |
+|64      | 85    | 30       | 8.4        |
+|128     | 281   | 54       | 16.5       |
 
 * Footnote: the swap for 128 had a max of 2.25G. There was noticeable memory pressure, which increased training time to over 4 hours
 

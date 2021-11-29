@@ -41,7 +41,7 @@ Screen shots of each run is in the folders.
 
 [https://pjreddie.com/media/files/papers/YOLOv3.pdf] - YOLOV3 paper
 
-## Observations
+## Batches larger than 128
 
-During the training, the GPU was above 90% utilization. CPU usage was around 50%. Performance was similar to COCO Dataset.
+CreateML app doesn't let you use batches larger than 128, but you can get around that. I used vi to edit the batch setting in "model container" folder. When you start the app, the batch will be blank. Training will still run, but the batch drop down is blank. For Pascal dataset, using batch size larger than 128 does improve the accuracy, but 256 is the practical limit on 32G of memory. If you have a M1 Max with 64G of memory, you should be able to use batch 512.
 

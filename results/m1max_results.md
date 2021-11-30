@@ -51,7 +51,7 @@ Note the accuracy between the small and larger dataset is quite different. Even 
 
 # Transfer Learning
 
-The accuracy with transfer learning is better than full network.
+The main advantage of using transfer learning is faster training time, improved accuracy and GPU utilization. Hopefully future releases of CreateML will improve GPU usage with full network.
 
 |batch	 | ET min | Train Acc | Val Acc | Test Acc | Top IU Train | Top IU Valid | Top IU Test | Peak mem G | loss |
 |--------|:-------|:----------|:--------|:---------|:-------------|:-------------|:------------|:-----------|:-----|

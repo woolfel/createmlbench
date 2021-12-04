@@ -1,8 +1,8 @@
 # Create ML Benchmark
 
-I created this CreateML project to benchmark Apple's M1 Macbook Air and 2021 M1 Max Macbook Pro. The project uses the object detection model with a simple dataset I created on roboflow. This isn't meant to produce a useful model. The main purpose is to measure the performance of macbooks with different dataset and batch sizes. I have several NVidia video cards for doing ML training, but these days the cards are over priced due to supply shortage.
+I made this CreateML project to benchmark Apple's M1 Macbook Air and 2021 M1 Max Macbook Pro. The project uses the object detection model with a simple dataset I created on roboflow. This isn't meant to produce a useful model. The main purpose is to measure the performance of macbooks with different dataset and batch sizes. I have several NVidia video cards for doing ML training, but these days the cards are over priced due to supply shortage.
 
-The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). This makes the M1 Max macbook an interesting alternative for light weight experiments.
+The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). This makes the M1 Max macbook an interesting alternative for light weight experiments. I hope other people find these results useful and interesting.
 
 [https://github.com/woolfel/createmlbench/tree/main/results/coco] - Results for COCO dataset on M1 Max MBP
 
@@ -14,7 +14,7 @@ The dataset is up on Roboflow.com. You can download the datasets with these link
 
 ## Roboflow public datasets
 
-To get a better idea of the performance limits of the new M1 Max SOC, I decided to use the public datasets and ran a bunch of tests. You can find the public datasets for Microsoft COCO and Pascal VOC at the url below.
+To get a better idea of the performance limits of the new M1 Max SOC, I decided to use the public datasets and ran a bunch of tests. You can find the public datasets for Microsoft COCO and Pascal VOC at the url below. When you download the public datasets, make sure to select createml format.
 
 [https://public.roboflow.com/object-detection/microsoft-coco-subset] - microsoft coco 2017
 

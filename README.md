@@ -6,6 +6,10 @@ The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). Thi
 
 [https://github.com/woolfel/createmlbench/tree/main/results/coco] - Results for COCO dataset on M1 Max MBP
 
+## Jan 2023 Update
+
+Due to the GPU market crash, the price for RTX 3090 24G is down to $1,000-2,200 on amazon. That's still too expensive for me. The speced out M2Max MBP cost $4,500 and is still a better bargain than spending $2,000 for RTX 3090. To get a NVidia video card with 40G, you'd have to spend $9,800 for a Tesla A100. That is an impressive card, but it chew Watts like it's a hungry hippo.
+
 ## Performance Notes
 
 Back in November of 2021, there was a bug with CreateML. If you created an object detection project and set it to transfer learning, it wouldn't fully utilize the GPU. This was repeatable on both M1 MBAir and M1Max BMP. If you set it to full network, GPU usage during training would be over 80%.

@@ -6,6 +6,12 @@ The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). Thi
 
 [https://github.com/woolfel/createmlbench/tree/main/results/coco] - Results for COCO dataset on M1 Max MBP
 
+## Performance Notes
+
+Back in November of 2021, there was a bug with CreateML. If you created an object detection project and set it to transfer learning, it wouldn't fully utilize the GPU. This was repeatable on both M1 MBAir and M1Max BMP. If you set it to full network, GPU usage during training would be over 80%.
+
+The latest version of CreateML seems to have fix the odd GPU utilization bug from 2021. If you set it to use transfer learning, it uses 95% of the GPU. If you set it to fully network, the GPU usage is around 75%. 
+
 ## Roboflow Project
 
 The dataset is up on Roboflow.com. You can download the datasets with these links

@@ -10,7 +10,9 @@ The cost of a high end RTX 3090 24G is around $3000.00 on newegg (Nov/2021). Thi
 
 Back in November of 2021, there was a bug with CreateML. If you created an object detection project and set it to transfer learning, it wouldn't fully utilize the GPU. This was repeatable on both M1 MBAir and M1Max BMP. If you set it to full network, GPU usage during training would be over 80%.
 
-The latest version of CreateML seems to have fix the odd GPU utilization bug from 2021. If you set it to use transfer learning, it uses 95% of the GPU. If you set it to fully network, the GPU usage is around 75%. 
+The latest version of CreateML seems to have fix the odd GPU utilization bug from 2021. If you set it to use transfer learning, it uses 95% of the GPU. If you set it to fully network, the GPU usage is around 75%. On M1Max, activity monitor reports 75-80% cpu usage across all cores. On M2Max, activity monitor reports 200-250% cpu usage across all cores. The changes to both GPU and CPU have made significant improvement to utilitization for training.
+
+I'm glad I bought a M2Max with 38GPU and 96G.
 
 ## Roboflow Project
 
